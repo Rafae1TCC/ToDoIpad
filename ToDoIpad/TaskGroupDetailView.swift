@@ -18,7 +18,7 @@ struct TaskGroupDetailView: View {
                 if sizeClass == .regular{
                     GroupStatsView(tasks: groups.tasks)
                         .listRowInsets(EdgeInsets())
-                        .listRowBackground(Color(.secondarySystemBackground))
+                        .listRowBackground(Color(.lightGray))
                 }
             }
             ForEach($groups.tasks) { $task in
